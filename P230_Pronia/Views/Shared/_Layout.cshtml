@@ -815,7 +815,7 @@
                             </a>
                         </div>
                         <ul class="minicart-list">
-                            @foreach (var item in layoutService.GetBasket().CookieBasketItemVMs)
+                            @foreach (CookieBasketItemVM item in layoutService.GetBasket().CookieBasketItemVMs)
                             {
                                 Plant plants = layoutService.GetPlants().FirstOrDefault(p => p.Id == item.Id);
 
